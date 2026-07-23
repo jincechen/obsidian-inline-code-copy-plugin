@@ -1,17 +1,24 @@
 {
-	"name": "obsidian-sample-plugin",
-	"version": "1.0.0",
-	"description": "This is a sample plugin for Obsidian (https://obsidian.md)",
+	"name": "obsidian-inline-code-copy",
+	"version": "1.0.1",
+	"description": "Copy inline code on click, in both reading view and Live Preview.",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
 		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
 		"version": "node version-bump.mjs && git add manifest.json versions.json"
 	},
-	"keywords": [],
-	"author": "",
+	"keywords": [
+		"obsidian",
+		"obsidian-plugin",
+		"inline-code",
+		"clipboard",
+		"copy"
+	],
+	"author": "Hongchen Lin",
 	"license": "MIT",
 	"devDependencies": {
+		"@codemirror/language": "^6.12.4",
 		"@types/node": "^16.11.6",
 		"@typescript-eslint/eslint-plugin": "5.29.0",
 		"@typescript-eslint/parser": "5.29.0",
